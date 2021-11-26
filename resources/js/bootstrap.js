@@ -17,6 +17,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 // import Echo from 'laravel-echo';
+import QrScanner from 'qr-scanner';
+window.QrScanner = QrScanner
+import QrScannerWorkerPath from '!!file-loader!../../node_modules/qr-scanner/qr-scanner-worker.min.js';
+window.QrScannerWorkerPath = QrScannerWorkerPath
 
 // window.Pusher = require('pusher-js');
 
